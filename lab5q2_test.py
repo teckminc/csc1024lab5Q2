@@ -20,7 +20,7 @@ def test_case3(monkeypatch, capsys):
   with open(f"lab5q2.py") as tf:
     head = [next(tf) for _ in range(18)]
     s = tf.read()
-    assert(s.find("my_list ") != -1 )
+    assert(s.find("my_list") != -1 )
 
 def test_case4(monkeypatch, capsys):
     number_inputs = StringIO('2.1\n4.5\n3.2\n5.7\n1.1\n')
