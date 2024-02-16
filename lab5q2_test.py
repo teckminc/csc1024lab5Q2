@@ -12,13 +12,13 @@ def test_case1(monkeypatch, capsys):
 
 def test_case2(monkeypatch, capsys):
   with open(f"lab5q2.py") as tf:
-    head = [next(tf) for _ in range(18)]
+    head = [next(tf) for _ in range(21)]
     s = tf.read()
     assert(s.find("while") != -1 )
 
 def test_case3(monkeypatch, capsys):
   with open(f"lab5q2.py") as tf:
-    head = [next(tf) for _ in range(18)]
+    head = [next(tf) for _ in range(21)]
     s = tf.read()
     assert(s.find("my_list") != -1 )
 
